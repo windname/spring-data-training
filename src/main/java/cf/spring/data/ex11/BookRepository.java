@@ -1,4 +1,4 @@
-package cf.spring.data.ex1;
+package cf.spring.data.ex11;
 
 import org.springframework.data.repository.CrudRepository;
 

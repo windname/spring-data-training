@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
  * @author vgrigoriev - 2/1/2018
  */
 public interface BookDAO {
-    Book getBook();
+    Book getBookById(int id);
 }

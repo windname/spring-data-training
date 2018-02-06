@@ -11,13 +11,31 @@ public class BookService {
     @Autowired
     BookDAO bookDAO;
 
-    public void buyBook(int bookId) {
-        String book = bookDAO.getBookNameById(bookId);
-        System.out.println("User bought book: " + book);
-    }
-
     public void getBook(int bookId) {
         Book book = bookDAO.getBookById(bookId);
         System.out.println("User bought book: " + book);
     }
+
+    public void addBook() {
+        Book b = new Book();
+        b.setName("Harry Potter");
+        b.setAuthorId(2);
+        bookDAO.addBook(b);
+    }
+
+    public void getBookbyAuthor(int bookId) {
+        Book book = bookDAO.getBookByAuthor(bookId);
+        System.out.println("User bought book: " + book);
+    }
+
+    public void deleteBookAndList(int id) {
+        bookDAO.deleteBook(2);
+        bookDAO.getBooks().forEach(System.out::println);
+
+    }
+
+
+
+
+
 }

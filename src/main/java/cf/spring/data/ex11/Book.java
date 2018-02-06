@@ -1,4 +1,4 @@
-package cf.spring.data.ex3;
+package cf.spring.data.ex11;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -40,10 +40,5 @@ public class Book {
 
     public void setAuthorId(int authorId) {
         this.authorId = authorId;
-    }
-
-    @Override
-    public String toString() {
-        return "Book{" + "id=" + id + ", name='" + name + '\'' + ", authorId=" + authorId + '}';
     }
 }

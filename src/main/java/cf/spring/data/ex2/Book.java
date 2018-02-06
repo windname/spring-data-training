@@ -1,19 +1,11 @@
-package cf.spring.data.ex1;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+package cf.spring.data.ex2;
 
 /**
  * @author vgrigoriev - 2/1/2018
+ * domain object
  */
-@Entity
 public class Book {
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+
     private int id;
 
     private String name;
@@ -42,5 +34,10 @@ public class Book {
 
     public void setAuthorId(int authorId) {
         this.authorId = authorId;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" + "id=" + id + ", name='" + name + '\'' + ", authorId=" + authorId + '}';
     }
 }
