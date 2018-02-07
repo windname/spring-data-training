@@ -7,4 +7,6 @@ public interface BookDAO {
     String getBookNameById(int id);
 
     Book getBookById(int id);
+
+    void addRowAndList();
 }

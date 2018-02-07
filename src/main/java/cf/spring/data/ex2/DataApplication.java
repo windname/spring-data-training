@@ -12,5 +12,7 @@ public class DataApplication {
         BookService service = (BookService)ctx.getBean("bookService");
         service.buyBook(1);
 		service.getBook(1);
+
+		service.addBookAndList();
 	}
 }

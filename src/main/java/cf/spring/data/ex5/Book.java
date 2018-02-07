@@ -1,4 +1,4 @@
-package cf.spring.data.ex11;
+package cf.spring.data.ex5;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -20,4 +20,8 @@ public class BookService {
         Book book = bookDAO.getBookById(bookId);
         System.out.println("User bought book: " + book);
     }
+
+    public void addBookAndList() {
+        bookDAO.addRowAndList();
+    }
 }
